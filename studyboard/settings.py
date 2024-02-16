@@ -54,8 +54,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'studyboard.urls'
-
 TEMPLATES = [
+   
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
@@ -72,6 +72,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'studyboard.wsgi.application'
 
@@ -94,18 +95,29 @@ logger.setLevel(logging.DEBUG)
 logger.addHandler(logging.StreamHandler())
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'de18sntmm49g52',
+#         'USER': 'jzfod***xyldqj',
+#         'PASSWORD': 'e6020d1c4*****ec7bc96c99f66d37bf6',
+#         'HOST': 'ec2-34-193-****-1.amazonaws.com',  # or the IP address of your PostgreSQL server
+#         'PORT': '5432',  # default PostgreSQL port
+
+#     }
+# }
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de18sntmm49g52',
-        'USER': 'jzfod***xyldqj',
-        'PASSWORD': 'e6020d1c4*****ec7bc96c99f66d37bf6',
-        'HOST': 'ec2-34-193-****-1.amazonaws.com',  # or the IP address of your PostgreSQL server
+        'NAME': 'studyroom1',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',  # or the IP address of your PostgreSQL server
         'PORT': '5432',  # default PostgreSQL port
 
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators

@@ -1,11 +1,13 @@
+
 {% extends 'main.html' %}
+{% load static %}
 {% block content %}
 
 
   <main class="profile-page layout layout--3">
     <div class="container">
       <!-- Topics Start -->
-      {% include 'base/topics_component.html' %}
+      {% include 'topics_component.html' %}
       <!-- Topics End -->
 
       <!-- Room List Start -->
@@ -13,7 +15,8 @@
         <div class="profile">
           <div class="profile__avatar">
             <div class="avatar avatar--large active">
-              <!-- <img src="https://randomuser.me/api/portraits/men/11.jpg" /> -->
+              <img src="{% static  'images/avatar.svg' %}" />
+              
             </div>
           </div>
           <div class="profile__info">
@@ -40,13 +43,13 @@
             </h2>
           </div>
         </div>
-        {% include 'base/feed_components.html' %}
+        {% include 'feed_components.html' %}
        
       </div>
       <!-- Room List End -->
 
       <!-- Activities Start -->
-      {% include 'base/activity_component.html' %}
+      {% include 'activity_component.html' %}
       <!-- Activities End -->
     </div>
   </main>
