@@ -11,17 +11,17 @@
 <div class="home-container" >
   <div>
     <!-- copy this in topics_component.html -->
-    {% include 'base\topics_component.html' %}
+    {% include 'topics_component.html' %}
   </div>
   <div>
     <h5>{{room_count}} rooms available </h5>
     <a href="{% url 'create-room' %}">Create Room</a>
     <!-- extract into feed_components  -->
-    {% include 'base\feed_components.html' %}
+    {% include 'feed_components.html' %}
   </div>
 
   <div>
-    {% include 'base\activity_component.html' %}
+    {% include 'activity_component.html' %}
     <!-- copy this code into activity componet reuse purpose -->
   </div>
 </div>
