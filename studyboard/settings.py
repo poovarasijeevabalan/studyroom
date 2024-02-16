@@ -95,18 +95,12 @@ logger.addHandler(logging.StreamHandler())
 
 DATABASES = {
     'default': {
-
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': 'studydb',
-
-        'USER': '<db_username>',
-
-        'PASSWORD': '<password>',
-
-        'HOST': '<db_hostname_or_ip>',
-
-        'PORT': '5432',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'studyroom1',
+        'USER': 'postgres',
+        'PASSWORD': '1234',
+        'HOST': 'localhost',  # or the IP address of your PostgreSQL server
+        'PORT': '5432',  # default PostgreSQL port
 
     }
 }
