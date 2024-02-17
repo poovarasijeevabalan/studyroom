@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-1ht4b585ay^=ikmkvo5#8_fy%l@h^@8p-2(2l9y8g@ugi*4c$6'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['studyroom.herokuapp.com']
 
@@ -109,10 +109,10 @@ DATABASES = {
 
         
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de18s***9g52',
-        'USER': 'jzfo****ldqj',
-        'PASSWORD': 'e6020d****77d82b2f31b9bcec7bc96c99f66d37bf6',
-        'HOST': 'ec2-****ute-1.amazonaws.com',  # or the IP address of your PostgreSQL server
+        'NAME': 'de18sntmm49g52',
+        'USER': 'jzfodhbkxyldqj',
+        'PASSWORD': 'e6020d1c4843f719877bc50cdb3769277d82b2f31b9bcec7bc96c99f66d37bf6',
+        'HOST': 'ec2-34-193-110-25.compute-1.amazonaws.com',  # or the IP address of your PostgreSQL server
         'PORT': '5432',  # default PostgreSQL port
 
     }
