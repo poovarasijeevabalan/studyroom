@@ -109,10 +109,10 @@ DATABASES = {
 
         
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'de18srgdfg52',
-        'USER': 'jzfo**kxyldqj',
-        'PASSWORD': 'e60*******82b2f31b9bcec7bc96c99f66d37bf6',
-        'HOST': 'ec2-34-19****te-1.amazonaws.com',  # or the IP address of your PostgreSQL server
+        'NAME': 'de18sntmm49g52',
+        'USER': 'jzfodhbkxyldqj',
+        'PASSWORD': 'e6020d1c4843f719877bc50cdb3769277d82b2f31b9bcec7bc96c99f66d37bf6',
+        'HOST': 'ec2-34-193-110-25.compute-1.amazonaws.com',  # or the IP address of your PostgreSQL server
         'PORT': '5432',  # default PostgreSQL port
 
     }
